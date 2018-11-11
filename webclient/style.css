@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-backface-visibility: hidden;
+}
+
+.header {
+  height: 25px;
+  background: #222;
+  color: #eee;
+  text-align: center;
+  font: 10px/25px Helvetica, Verdana, sans-serif; 
+}
+
+.header a {
+  color: #999;
+}
+
+/*WRAPPER*/
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto;
+  width: 370px;
+}
+
+.menu a {
+  margin-right: -4px;
+  padding: 10px 40px;
+  width: 50px;
+  color: #333;
+  text-decoration: none;
+  font: 15px/25px Helvetica, Arial, sans-serif;
+}
+
+.menu a:hover {
+  background: #eee;
+}
+
+
+.innerCircle {
+  content: "DS";
+  text-align: center;
+  font: 40px/135px Georgia, Times, serif;
+  color: #070707;
+  position: absolute;
+  top: 140px;
+  left: 110px;
+  z-index: 10;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #fff;
+
+  -webkit-box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+}
+
+
+.circle {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #484e52;
+
+  box-shadow: inset 0px 0px 30px rgba(0,0,0,0.3);
+  -webkit-box-shadow: inset 0px 0px 30px rgba(0,0,0,0.3);
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+
+.circle li.cookingMenu  {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  
+  background-color: white;
+  background-size: cover;
+  list-style-type: none;
+  text-align: center;
+  font: 20px/50px Helvetica, Arial, sans-serif;
+  top: 0;
+  left: 0;
+}
+
+.circle li.cookingTime  {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  background-size: cover;
+  list-style-type: none;
+  text-align: center;
+  font: 20px/50px Helvetica, Arial, sans-serif;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+}
+
+.circle li:nth-child(1) {
+  top: 15px;
+  left: 125px;
+  background-image: url("./res/cook.png");
+}
+
+/*90*/
+.circle li:nth-child(2) {
+  top: 125px;
+  left: 235px;
+  background-image: url("./res/defrost.png");
+  -webkit-transform: rotate(0deg); 
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+/*180*/
+.circle li:nth-child(3) {
+  top: 235px;
+  left: 125px;
+  background-image: url("./res/meat.png");
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+/*270*/
+.circle li:nth-child(4) {
+  top: 125px;
+  left: 15px;
+  background-image: url("./res/vagetable.png");
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+/*
+.circle li:nth-child(5) {
+  top: 80px;
+  left: 180px;
+}
+
+.circle li:nth-child(6) {
+  top: 180px;
+  left: 180px;
+}
+
+.circle li:nth-child(7) {
+  top: 80px;
+  left: 80px;
+}
+
+.circle li:nth-child(8) {
+  top: 180px;
+  left: 80px;
+}
+
+*/
+
+.circle li:nth-child(5) {
+  top: 60px;
+  left: 200px;
+}
+
+.circle li:nth-child(6) {
+  top: 200px;
+  left: 200px;
+}
+
+.circle li:nth-child(7) {
+  top: 200px;
+  left: 60px;
+}
+
+.circle li:nth-child(8) {
+  top: 60px;
+  left: 60px;
+}
+
+.hide{
+  display: none
+}
+
+.show{
+  display: block
+}
+
+.selected{
+  background-color: #8ACDE1 !important;
+}
